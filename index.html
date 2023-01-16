@@ -47,14 +47,31 @@
         </div>
         <div class="header">
             <div class="search-bar">
-                <label for="search"></label>
+                <label for="search" aria-label="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <input type="text" id="search" name="search">
             </div>
-            <h3 class="user-name">User</h3>
+            <div class="mini-user">
+                <a href="">
+                    <i class="fa-regular fa-bell"></i>
+                </a>
+                <a href="">
+                    <button class="mini-profile">
+                        
+                    </button>
+                </a>
+                <p class="mini-name">Zack Dias</p>
+            </div>
+            <div class="user-header">
+                <button class="profile-pic"></button>
+                <div class="greeting-user">
+                    <p class="greeting">Hello there,</p>
+                    <h2>Zack Dias (@zack)</h2>
+                </div>
+            </div>
             <div class="header-buttons">
-                <button>New</button>
-                <button>Upload</button>
-                <button>Share</button>
+                <button class="new">New</button>
+                <button class="upload">Upload</button>
+                <button class="share">Share</button>
             </div>
         </div>
         <div class="content">
