@@ -1,9 +1,9 @@
 const sidebar = document.querySelector(".sidebar");
 const userHeader = document.querySelector(".user-header");
 const menu = document.querySelector("#menu");
-
 const mql = window.matchMedia('(max-width: 1000px)');
 
+mql.addEventListener('change', screenTest);
 
 //check width of page for adapting
 function screenTest(e) {
@@ -26,6 +26,6 @@ function checkScreen() {
     }
 }
 
+//run function on page load for when opened in cellphone
 checkScreen(); 
 
-mql.addEventListener('change', screenTest);
