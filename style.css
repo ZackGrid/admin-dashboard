@@ -37,6 +37,7 @@ div.container {
     grid-template: 1fr 4fr / minmax(250px, 300px) 1fr;
 }
 
+/*Everything related to the sidebar ----------------------------------------*/
 .sidebar {
     background-color: var(--main-color);
     color: var(--white);
@@ -72,7 +73,10 @@ ul a:hover {
     color: var(--contrast-lighter);
     text-shadow: 3px 3px 3px  var(--shadow);
 }
+/*end sidebar-----------------------------------------------------*/
 
+
+/*Everything related to the header ----------------------------*/
 .header {
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
@@ -115,6 +119,7 @@ div.mini-user {
     align-items: center;
 }
 
+/*fa-bars is only used when in mobile or small screens*/
 i.fa-bell,
 i.fa-bars {
     font-size: 1.5rem;
@@ -127,6 +132,7 @@ i.fa-bars {
     animation-delay: 0.1s;
 }
 
+/*bell icon animation to make it wiggle*/
 @keyframes notification-bell {
     0% {transform: rotate(0deg);}
     25% {transform: rotate(20deg);}
@@ -198,6 +204,10 @@ i.fa-bars {
     padding-left: 15px;
 }
 
+/*There are animations and gradients commented here
+because after making them I felt 
+they weren't adding much to the overall style, yet
+I don't want to throw them away just yet*/
 .header-buttons button {
     border: none;
     padding: 12px;
@@ -242,7 +252,10 @@ i.fa-bars {
     transform: scale(0.93, 0.93);
     box-shadow: none;
 }
+/*end header-----------------------------------------------------*/
 
+
+/*Everything related to the main content of the dashboard -------*/
 .content {
     grid-row: 2 / 3;
     display: grid;
@@ -372,8 +385,9 @@ i.fa-bars {
 .four button {
     background-image: url("images/5.2\ rafa\ portrait\ low.png");
 }
+/*end main content ---------------------------------------------*/
 
-
+/*Media query for adapting size and orientation for smartphones and small screens ----------------------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
     div.container {
         grid-template-rows: repeat(2, min-content);
@@ -430,14 +444,4 @@ i.fa-bars {
         width: 80px;
     }
 
-
-
 }
-/* .project-item h3 {
-    padding-bottom: 15px;
-} */
-
-/* just to vizualize things*/
-/* div div {
-    border: 1px solid rgb(146, 146, 146);
-} */
