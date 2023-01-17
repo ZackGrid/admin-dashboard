@@ -15,33 +15,33 @@
             <h2 class="dashboard"><i class="fa-solid fa-bars-staggered"></i> Dashboard</h2>
             <ul class="sidebar-itens">
                 <a href="">
-                    <li class="home"><i class="fa-solid fa-house"></i> Home</li>
+                    <li class="home dash-icon"><i class="fa-solid fa-house"></i> Home</li>
                 </a>
                 <a href="">
-                    <li class="profile"><i class="fa-solid fa-address-card"></i> Profile</li>
+                    <li class="profile dash-icon"><i class="fa-solid fa-address-card"></i> Profile</li>
                 </a>
                 <a href="">
-                    <li class="messages"><i class="fa-solid fa-message"></i> Messages</li>
+                    <li class="messages dash-icon"><i class="fa-solid fa-message"></i> Messages</li>
                 </a>
                 <a href="">
-                    <li class="history"><i class="fa-solid fa-clock"></i> History</li>
+                    <li class="history dash-icon"><i class="fa-solid fa-clock"></i> History</li>
                 </a>
                 <a href="">
-                    <li class="tasks"><i class="fa-solid fa-list-check"></i> Tasks</li>
+                    <li class="tasks dash-icon"><i class="fa-solid fa-list-check"></i> Tasks</li>
                 </a>
                 <a href="">
-                    <li class="community"><i class="fa-solid fa-users-line"></i> Communities</li>
+                    <li class="community dash-icon"><i class="fa-solid fa-users-line"></i> Communities</li>
                 </a>
             </ul>
             <ul class="sidebar-settings">
                 <a href="">
-                    <li class="settings"><i class="fa-solid fa-gears"></i> Settings</li>
+                    <li class="settings dash-icon"><i class="fa-solid fa-gears"></i> Settings</li>
                 </a>
                 <a href="">
-                    <li class="support"><i class="fa-solid fa-circle-question"></i> Support</li>
+                    <li class="support dash-icon"><i class="fa-solid fa-circle-question"></i> Support</li>
                 </a>
                 <a href="">
-                    <li class="privacy"><i class="fa-solid fa-shield-halved"></i> Privacy</li>
+                    <li class="privacy dash-icon"><i class="fa-solid fa-shield-halved"></i> Privacy</li>
                 </a>
             </ul>
         </div>
@@ -51,6 +51,10 @@
                 <input type="text" id="search" name="search">
             </div>
             <div class="mini-user">
+                <a href="menu.html">
+                    <span></span>
+                    <i id="menu"></i>
+                </a>
                 <a href="">
                     <span></span>
                     <i class="fa-regular fa-bell"></i>
@@ -77,14 +81,114 @@
         </div>
         <div class="content">
             <div class="projects">
-                <h4>Your Projects</h4>
+                <h3 class="your-proj">Your Projects</h3>
+                <div class="projects-container">
+                    <div class="project-item">
+                        <h3>Super Awesome Project</h3>
+                        <p>Vestibulum nibh enim, rutrum vel lorem vitae, mollis volutpat justo. Sed facilisis eu nisl vel iaculis. Quisque in nunc interdum, bibendum lectus a, commodo elit.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h3>World Domination App</h3>
+                        <p>Cras at ultricies tellus. Aliquam a fringilla erat, nec venenatis nisl. Nunc condimentum laoreet venenatis. Donec egestas et quam ac suscipit. Donec ut orci non mauris porttitor bibendum. Proin vulputate nisl cursus, porttitor velit quis, dignissim velit.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h3>Flying Coffee Game</h3>
+                        <p>Etiam imperdiet augue eu vulputate vestibulum. Curabitur vitae placerat orci. Duis et sollicitudin justo, et mattis eros. Quisque finibus mollis consequat. Nullam blandit tortor sit amet nulla mollis vehicula. Donec dui tortor, tincidunt vel enim eu, condimentum dictum purus. Proin id tristique nisi.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h3>Ad Blocker</h3>
+                        <p>Morbi facilisis tempus justo vulputate posuere. Donec sagittis interdum est vitae facilisis. Integer in dolor leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc commodo vehicula magna, non egestas nunc vestibulum in. Nam vitae purus ut nunc accumsan tempus.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h3>App for Tabby Cats</h3>
+                        <p>Aliquam erat volutpat. Nulla facilisi. Nunc sit amet massa consectetur, consequat mi sit amet, pretium tortor. Proin ac ipsum interdum, laoreet massa sit amet, sagittis diam. Integer commodo lacinia magna, laoreet pellentesque erat fermentum in.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <h3>Cicada Music Generator</h3>
+                        <p>Vestibulum sit amet lorem urna. Aliquam a luctus nibh. Mauris placerat sed est eu egestas. Duis id augue turpis. Suspendisse in elit ac massa auctor vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque dapibus quam ac metus pharetra, at mattis neque mattis.</p>
+                        <div class="item-icons">
+                            <button><i class="fa-regular fa-star"></i></button>
+                            <button><i class="fa-regular fa-eye"></i></button>
+                            <button><i class="fa-solid fa-code-fork"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="side-content">
                 <div class="announcements">
-                    <h4>Announcements</h4>
+                    <h3>Announcements</h3>
+                    <div class="announcements-board">
+                        <div>
+                            <h4>Site Maintenance</h4>
+                            <p>Suspendisse in elit ac massa auctor vestibulum. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                        <div>
+                            <h4>Alien Invasion</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                        <div>
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="trending">
-                    <h4>Trending</h4>
+                    <h3>Trending</h3>
+                    <div class="trending-board">
+                        <div class="trend-user one">
+                            <button></button>
+                            <div>
+                                <p class="trend-username">@red</p>
+                                <p class="trend-project">Silent Alarm</p>
+                            </div>
+                        </div>
+                        <div class="trend-user two">
+                            <button></button>
+                            <div>
+                                <p class="trend-username">@zack</p>
+                                <p class="trend-project">App for Tabby Cats</p>
+                            </div>
+                        </div>
+                        <div class="trend-user three">
+                            <button></button>
+                            <div>
+                                <p class="trend-username">@trippy</p>
+                                <p class="trend-project">Rainbow Maker</p>
+                            </div>
+                        </div>
+                        <div class="trend-user four">
+                            <button></button>
+                            <div>
+                                <p class="trend-username">@raphael</p>
+                                <p class="trend-project">Cool Project</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
