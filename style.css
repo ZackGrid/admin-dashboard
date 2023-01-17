@@ -410,7 +410,22 @@ i.fa-bars {
 
     .content {
         padding: 30px 10px 30px 10px;
-        gap: 20px;
+        gap: 25px;
+    }
+
+    .header-buttons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 100px));
+        gap: 5px;
+        justify-items: center;
+        align-items: center;
+        padding-left: 0px;
+    }
+    
+    .header-buttons button {
+        border: none;
+        padding: 12px;
+        width: 80px;
     }
 
 
