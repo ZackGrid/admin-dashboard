@@ -6,11 +6,13 @@
 
 :root {
     --main-color: #0284c7;
+    --main-lighter: #0ea5e9;
     --white: #f0f9ff;
     --background-blue: #e7eaf1;
     --background-blue-darker: #d1d5df;
     --shadow: #2b5469;
     --contrast: #fb923c;
+    --contrast-darker: #f97316;
     --contrast-lighter: #fdba74;
 }
 
@@ -35,7 +37,7 @@ ul.sidebar-itens {
 }
 
 div.container {
-    height: 100vh;
+    /* height: 100vh; */
     display: grid;
     grid-template: 1fr 4fr / minmax(250px, 300px) 1fr;
 }
@@ -69,7 +71,7 @@ div.container {
     font-size: 1.2rem;
 }
 
-a:hover {
+ul a:hover {
     cursor: pointer;
     color: var(--contrast-lighter);
     text-shadow: 3px 3px 3px  var(--shadow);
@@ -79,9 +81,9 @@ a:hover {
     display: grid;
     grid-area: 1 / 2 / 2 / 3;
     grid-template: 1fr 1fr / 2fr 1fr;
-    padding: 10px 0 25px 0;
+    padding: 10px 10px 25px 0;
     background-color: #fff;
-    box-shadow: 2px -2px 10px 2px var(--shadow);
+    box-shadow: 6px -2px 10px 2px var(--shadow);
 }
 
 .search-bar {
@@ -105,6 +107,10 @@ input#search {
     border-radius: 15px;
 }
 
+input#search:focus {
+    outline: 2px solid var(--contrast);
+}
+
 div.mini-user {
     display: grid;
     grid-template-columns: repeat(3, max-content);
@@ -113,8 +119,23 @@ div.mini-user {
     align-items: center;
 }
 
-.fa-bell {
-    font-size: 1.4rem;
+i.fa-bell {
+    font-size: 1.5rem;
+}
+
+.fa-bell:hover {
+    animation-name: notification-bell;
+    cursor: pointer;
+    animation-duration: 0.4s;
+    animation-delay: 0.1s;
+}
+
+@keyframes notification-bell {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(20deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
 }
 
 .mini-name {
@@ -130,6 +151,11 @@ div.mini-user {
     background-image: url("images/me\ profile.png");
     background-size: cover;
     border: none;
+}
+
+.mini-profile:hover {
+    box-shadow: 0 0 2px 2px var(--contrast-lighter);
+    cursor: pointer;
 }
 
 .user-header {
@@ -148,6 +174,11 @@ div.mini-user {
     background-image: url("images/me\ profile.png");
     background-size: cover;
     border: none;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 0 3px 5px var(--contrast-lighter);
+    cursor: pointer;
 }
 
 .greeting-user {
@@ -170,15 +201,40 @@ div.mini-user {
 
 .header-buttons button {
     border: none;
-    padding: 15px;
+    padding: 12px;
     width: 100px;
-    background-color: var(--contrast);
+    background-image: linear-gradient(#fdba74, #f97316);
     border-radius: 30px;
     color: var(--white);
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 1px;
+    box-shadow: 0px 4px 5px #d1d5df;
+}
+
+/* @keyframes button-hover {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(15deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-15deg);}
+    100% {transform: rotate(0deg);}
+} */
+
+
+
+.header-buttons button:hover {
+    /* animation-name: button-hover;
+    animation-duration: 0.2s;
+    animation-delay: 0.1s; */
+    background-image: linear-gradient(#fed7aa, #ea580c);
+    cursor: pointer;
     
+}
+
+.header-buttons button:active {
+    background-image: linear-gradient(#fdba74, #c2410c);
+    transform: scale(0.93, 0.93);
+    box-shadow: none;
 }
 
 .content {
